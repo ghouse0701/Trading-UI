@@ -11,7 +11,7 @@ pipeline {
 }
         stage('Install npm prerequisites'){
             steps{
-                dir('/var/lib/jenkins/workspace/task6-job'){
+                dir('Trading-UI'){
                     sh'npm audit fix'
                     sh'npm install'
                     sh'npm run build'
