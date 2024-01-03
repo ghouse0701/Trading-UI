@@ -11,7 +11,6 @@ pipeline {
 }
         stage('Install npm prerequisites'){
             steps{
-                sh'cd /var/lib/jenkins/workspace/task6-job'
                 sh'npm audit fix'
                 sh'npm install'
                 sh'npm run build'
